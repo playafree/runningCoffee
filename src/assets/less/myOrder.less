@@ -1,0 +1,98 @@
+.my-order{
+    margin-top: 26px;
+    /deep/ .van-nav-bar__text{
+        color: #8A2BE2;
+    }
+    /deep/ .van-icon{
+        color: #8A2BE2;
+    }
+    .bg-content{
+        display: flex;
+        justify-content: space-around;
+        div{
+            font-size: 14px;
+            &.active{
+                color: #8e2ce2;
+                transform: scale(1.3);
+            }
+        }
+    }
+    .order-text{
+        text-align: left;
+        margin: 10px 10px 0;
+        border: 1px solid #8A2BE2;
+        border-radius: 20px;
+        /deep/ .van-card{
+            border-bottom: 1px solid #8A2BE2;
+            &:last-of-type{
+                border-bottom: none;
+            }
+        }
+        .order-id{
+            margin-top: -5px;
+            display: flex;
+            padding: 5px 15px;
+            justify-content: space-between;
+            background-color: #8A2BE2;
+            border-radius: 20px;
+            color: white;
+            .id{
+                font-size: 14px;
+            }
+            .clear{
+                text-decoration: underline;
+                margin-right: 5px;
+            }
+            .finish{
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                /deep/ .van-icon{
+                    color: white;
+                }
+                .clickFin{
+                    margin-right: 5px;
+                }
+                .van-icon{
+                    display: block;
+                }
+            }
+        }
+        .title{
+            display: flex;
+            .rule{
+                color: #c1b2b2;
+                margin-left: 20px;
+            }
+        }
+        .enname{
+            margin-top: 8px;
+            color: #7c7c7c;
+        }
+        .price{
+            color: #8A2BE2;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        /deep/ .van-card{
+            background-color: transparent;
+        }
+        .order-time{
+            padding: 10px;
+            font-size: 12px;
+            color: #908181;
+            font-weight: 600;
+            .total{
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+                .total-price{
+                    font-size: 14px;
+                    color: #8A2BE2;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
